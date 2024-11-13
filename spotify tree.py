@@ -77,13 +77,11 @@ print(f"Moynne du nombre de titres dans les playlists non collaboratives: {avg_t
 X = combined_df[['num_tracks', 'num_albums', 'num_artists']]
 y = combined_df['collaborative']
 
-# Créer un classificateur d'arbre de décision
+# créer un classificateur d'arbre de décision
 clf = DecisionTreeClassifier(random_state=0)
-
-# Adapter le classificateur aux données
+# adapter le classificateur aux données
 clf.fit(X, y)
 
-# Afficher l'arbre de décision
 plt.figure(figsize=(20, 10), dpi=1000)
 plot_tree(clf, filled=True, feature_names=X.columns, class_names=['Non-collaborative', 'Collaborative'])
 plt.show()
@@ -100,7 +98,7 @@ print(f"Score du modèle: {clf.score(X, y):.4f}")
 
 ##################################################################################
 
-# Scatter nombre de titres vs. nombre d'albums dans les playlists
+# scatter nombre de titres vs. nombre d'albums dans les playlists
 plt.figure(figsize=(10, 6))
 plt.scatter(combined_df['num_tracks'], combined_df['num_albums'], alpha=0.5)
 plt.axhline(y=combined_df['num_albums'].median(), color='r', linestyle='--', label='Médiane des albums')
@@ -111,7 +109,7 @@ plt.ylabel('Nombre d\'albums')
 plt.legend(['Playlist', 'Médiane des albums', 'Médiane des titres'])
 plt.show()
 
-# Heatmap nombre de titres vs. nombre d'albums dans les playlists
+# heatmap nombre de titres vs. nombre d'albums dans les playlists
 plt.figure(figsize=(10, 6))
 sns.kdeplot(x=combined_df['num_tracks'], y=combined_df['num_albums'], cmap='Reds', fill=True)
 plt.title('Desité du nombre de titres vs. nombre d\'albums dans les playlists')
@@ -121,7 +119,7 @@ plt.show()
 
 ##################################################################################
 
-# Scatter nombre de titres vs. nombre d'artistes dans les playlists
+# scatter nombre de titres vs. nombre d'artistes dans les playlists
 plt.figure(figsize=(10, 6))
 plt.scatter(combined_df['num_tracks'], combined_df['num_artists'], alpha=0.5, color='g')
 plt.axhline(y=combined_df['num_artists'].median(), color='r', linestyle='--', label='Médiane des artistes')
@@ -132,7 +130,7 @@ plt.ylabel('Nombre d\'artistes')
 plt.legend(['Playlist', 'Médiane des artistes', 'Médiane des titres'])
 plt.show()
 
-# Heatmap nombre de titres vs. nombre d'artistes dans les playlists
+# heatmap nombre de titres vs. nombre d'artistes dans les playlists
 plt.figure(figsize=(10, 6))
 sns.kdeplot(x=combined_df['num_tracks'], y=combined_df['num_artists'], cmap='Greens', fill=True)
 plt.title('Densité du nombre de titres vs. nombre d\'artistes dans les playlists')
@@ -142,17 +140,15 @@ plt.show()
 
 ##################################################################################
 
-# Arbre de décision pour prédire le nb de followers d'une playlist
+# arbre de décision pour prédire le nb de followers d'une playlist
 X = combined_df[['num_tracks', 'num_albums', 'num_artists']]
 y = combined_df['num_followers']
 
-# Créer un classificateur d'arbre de décision
+# créer un classificateur d'arbre de décision
 clf = DecisionTreeClassifier(random_state=0)
-
-# Adapter le classificateur aux données
+# adapter le classificateur aux données
 clf.fit(X, y)
 
-# Afficher l'arbre de décision
 plt.figure(figsize=(20, 10), dpi=1000)
 plot_tree(clf, filled=True, feature_names=X.columns)
 plt.show()
