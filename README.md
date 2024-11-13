@@ -2,6 +2,39 @@
 
 Ce projet Python permet d'analyser et de prédire certaines caractéristiques des playlists Spotify, en se basant sur un ensemble de fichiers JSON contenant des informations de playlists. Il offre plusieurs analyses et visualisations des données, et utilise des arbres de décision pour estimer si une playlist est collaborative, et pour prédire le nombre de followers des playlists.
 
+Pour l'exemple de ce TP j'ai uniquement utiliser 1000 playlists au format JSON dans un fichier sur le million proposé dans le dataset officiel suivant : <a href="https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge">Spotify Million Playlist Dataset Challenge</a>.<br />
+Bien entendu il est possible de mettre tous les fichiers data de playlist pour <b>~ 32 GB</b> dans le dossier ```./data```
+
+Voici l'exemple de la structure d'un JSON pour une seule playlist : 
+```json
+{
+        "name": "musical",
+        "collaborative": "false",
+        "pid": 5,
+        "modified_at": 1493424000,
+        "num_albums": 7,
+        "num_tracks": 12,
+        "num_followers": 1,
+        "num_edits": 2,
+        "duration_ms": 2657366,
+        "num_artists": 6,
+        "tracks": [
+            {
+                "pos": 0,
+                "artist_name": "Degiheugi",
+                "track_uri": "spotify:track:7vqa3sDmtEaVJ2gcvxtRID",
+                "artist_uri": "spotify:artist:3V2paBXEoZIAhfZRJmo2jL",
+                "track_name": "Finalement",
+                "album_uri": "spotify:album:2KrRMJ9z7Xjoz1Az4O6UML",
+                "duration_ms": 166264,
+                "album_name": "Dancing Chords and Fireflies"
+            },
+//.................................................
+        ],
+
+    }
+```
+
 ## Structure du Projet
 
 - **Bibliothèques Utilisées** : `pandas`, `glob`, `os`, `json`, `matplotlib.pyplot`, `sklearn.tree`, `seaborn`.
