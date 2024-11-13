@@ -73,3 +73,30 @@ Assurez-vous d'avoir les bibliothèques suivantes installées :
 ```bash
 pip install pandas matplotlib seaborn scikit-learn
 ```
+
+## Résultats
+
+### Arbre de décision pour prédire si une playlist est collaborative ou non
+
+![myplot](https://github.com/user-attachments/assets/c93fb3df-5a65-4191-af13-32023f432475)
+
+### Nombre de titres vs. nombre d'albums dans les playlists
+
+![myplot2](https://github.com/user-attachments/assets/ed04c881-d680-4f40-b4c2-8c0628614fda)
+
+### Densité du nombre de titres vs. nombre d'albums dans les playlists
+
+![myplot3](https://github.com/user-attachments/assets/50e42183-06f0-43f6-af5d-b40a4c4a2e0d)
+
+### Nombre de titres vs. nombre d\'artistes dans les play
+lists
+
+![myplot4](https://github.com/user-attachments/assets/b01d20e4-d50e-436b-8e79-8200aa404cc3)
+
+### Densité du nombre de titres vs. nombre d'artistes dans les playlists
+
+![myplot5](https://github.com/user-attachments/assets/dfe1f321-479a-4d41-8863-3a3b96e7d0ff)
+
+### Arbre de décision pour prédire le nb de followers d'une playlist
+
+![myplot6](https://github.com/user-attachments/assets/69d94017-e86a-4130-9757-2689ede9ff61)
