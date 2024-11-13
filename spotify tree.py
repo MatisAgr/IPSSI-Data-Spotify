@@ -59,8 +59,8 @@ combined_df['collaborative'] = combined_df['collaborative'].apply(lambda x: 1 if
 num_collaborative_playlists = combined_df['collaborative'].sum()
 total_playlists = len(combined_df)
 print('-----------------------------------')
-print(f"Number of collaborative playlists: {num_collaborative_playlists} / {total_playlists}")
-print(f"Percentage of collaborative playlists: {num_collaborative_playlists / total_playlists * 100:.2f}%")
+print(f"Nombre de playlists collaboratives: {num_collaborative_playlists} / {total_playlists}")
+print(f"Poucentage de playlists collaboratives: {num_collaborative_playlists / total_playlists * 100:.2f}%")
 print('-----------------------------------')
 
 ##################################################################################
