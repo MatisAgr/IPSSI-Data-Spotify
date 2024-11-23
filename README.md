@@ -89,7 +89,6 @@ pip install pandas matplotlib seaborn scikit-learn
 ![myplot3](https://github.com/user-attachments/assets/50e42183-06f0-43f6-af5d-b40a4c4a2e0d)
 
 ### Nombre de titres vs. nombre d\'artistes dans les play
-lists
 
 ![myplot4](https://github.com/user-attachments/assets/b01d20e4-d50e-436b-8e79-8200aa404cc3)
 
