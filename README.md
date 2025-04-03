@@ -1,4 +1,5 @@
 # Analyse et Prédiction de Playlists Spotify
+[![wakatime](https://wakatime.com/badge/user/a16f794f-b91d-4818-8dfc-d768ce605ece/project/fccc6583-d3b5-44d3-aa13-fc04318d316b.svg)](https://wakatime.com/badge/user/a16f794f-b91d-4818-8dfc-d768ce605ece/project/fccc6583-d3b5-44d3-aa13-fc04318d316b)
 
 Ce projet Python permet d'analyser et de prédire certaines caractéristiques des playlists Spotify, en se basant sur un ensemble de fichiers JSON contenant des informations de playlists. Il offre plusieurs analyses et visualisations des données, et utilise des arbres de décision pour estimer si une playlist est collaborative, et pour prédire le nombre de followers des playlists.
 
